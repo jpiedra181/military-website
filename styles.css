@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .lato-thin {
     font-family: "Lato", sans-serif;
     font-weight: 100;
@@ -731,6 +735,15 @@ footer {
         font-family: "Bowlby One";
         font-size: 24px;
         color: #736d61;
+    }
+
+    .hero-section {
+        width: 100%;
+        padding: 16px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12px;
     }
 
     .hero-content-desktop {
