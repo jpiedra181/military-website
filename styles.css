@@ -693,6 +693,13 @@ footer {
         background-color: transparent;
     }
 
+    .menu-mobile {
+        font-family: "Bowlby One";
+        color: #736d61;
+        font-size: 28px;
+        font-weight: 800;
+    }
+
     .menu {
         display: none;
     }
