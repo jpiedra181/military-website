@@ -111,6 +111,7 @@ menu {
     display: flex;
     justify-content: center;
     height: 600px;
+    position: relative;
 }
 .slider {
     margin-top: 20px;
@@ -247,6 +248,7 @@ figure img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     border: 1px solid black;
     text-align: center;
     padding: 20px 0;
@@ -1078,7 +1080,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 12px;
+        gap: 28px;
     }
 
     .menu-footer {
@@ -1096,7 +1098,7 @@ footer {
     .social-links {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 24px;
     }
 
     .social-links a {
