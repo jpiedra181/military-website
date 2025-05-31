@@ -26,18 +26,42 @@ const closeModal_8 = document.getElementById("closeModal-8")
 const openMenuMobile = document.querySelector(".open-menu-mobile")
 const modalMenu = document.getElementById("modal-mobile-menu")
 const closeMenuMobile = document.getElementById("closeModal-menu")
+const menuLinks = document.querySelectorAll(".menu-mobile a")
 
 // Modal Menu mobile
 openMenuMobile.addEventListener("click", () => {
-    scrollPosition = window.scrollY
     modalMenu.classList.remove("hidden")
-    modalMenu.scrollIntoView({ behavior: "smooth", block: "center" })
 })
 
+// Close modal
 closeMenuMobile.addEventListener("click", () => {
     modalMenu.classList.add("hidden")
-    window.scrollTo({ top: scrollPosition, behavior: "smooth" })
 })
+
+// Close modal when clicking any menu link
+menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        modalMenu.classList.add("hidden")
+    })
+})
+
+// Optional: close modal if clicking outside modal content
+modalMenu.addEventListener("click", (e) => {
+    if (e.target.classList.contains("modal-overlay-mobile")) {
+        modalMenu.classList.add("hidden")
+    }
+})
+
+// openMenuMobile.addEventListener("click", () => {
+//     scrollPosition = window.scrollY
+//     modalMenu.classList.remove("hidden")
+//     modalMenu.scrollIntoView({ behavior: "smooth", block: "center" })
+// })
+
+// closeMenuMobile.addEventListener("click", () => {
+//     modalMenu.classList.add("hidden")
+//     window.scrollTo({ top: scrollPosition, behavior: "smooth" })
+// })
 
 let scrollPosition = 0
 
