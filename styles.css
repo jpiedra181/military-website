@@ -2,7 +2,18 @@ html {
     scroll-behavior: smooth;
 }
 
-.lato-thin {
+@font-face {
+    font-family: "Nordhead";
+    src: url("/fonts/Nordhead-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Nordhead", sans-serif;
+}
+
+/* .lato-thin {
     font-family: "Lato", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -30,7 +41,7 @@ html {
     font-family: "Lato", sans-serif;
     font-weight: 900;
     font-style: normal;
-}
+} */
 
 .bowlby-one-regular {
     font-family: "Bowlby One", sans-serif;
@@ -41,7 +52,6 @@ html {
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: "Lato";
 }
 
 a {
