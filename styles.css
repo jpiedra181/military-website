@@ -154,7 +154,8 @@ menu {
 
 .slider {
     overflow: hidden;
-    max-width: 700px;
+    max-width: 500px;
+    margin: 100px 0;
 }
 
 /* .slider {
@@ -223,8 +224,9 @@ figure img {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #e7e6e6;
-    border-top: 1px solid #736d61;
+    background: linear-gradient(180deg, white 5%, #c7c7c7);
+    /* background-color: #e7e6e6; */
+    padding: 72px 0;
 }
 
 .about-us {
@@ -233,6 +235,12 @@ figure img {
     padding: 32px 80px;
     display: flex;
     flex-direction: column;
+    margin-top: 24px;
+}
+
+.about-us h3 {
+    text-align: center;
+    margin-bottom: 44px;
 }
 
 .about-us article {
@@ -275,6 +283,7 @@ figure img {
     display: flex;
     justify-content: center;
     box-shadow: 5px 0 10px #736d61;
+    padding: 72px 0;
 }
 
 .products-container {
@@ -283,11 +292,12 @@ figure img {
     padding: 32px 80px;
     display: flex;
     flex-direction: column;
+    margin-top: 24px;
 }
 
 .products-container h3 {
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .grid-container {
@@ -467,6 +477,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 72px 0;
 }
 
 .tech {
@@ -481,7 +492,7 @@ h2 {
 
 .tech h3 {
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .tech-paragraphs {
@@ -574,6 +585,7 @@ h2 {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    padding: 60px 0;
 }
 
 .contact::before {
@@ -658,7 +670,7 @@ footer {
 .footer {
     width: 100%;
     max-width: 1280px;
-    padding: 32px 80px;
+    padding: 72px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1159,7 +1171,7 @@ footer {
     .footer {
         width: 100%;
         height: fit-content;
-        padding: 16px 16px;
+        padding: 60px 16px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
