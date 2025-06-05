@@ -11,6 +11,7 @@ html {
 
 body {
     font-family: "Nordhead", sans-serif;
+    overflow-x: hidden;
 }
 
 /* .lato-thin {
@@ -125,51 +126,49 @@ menu {
     display: none;
 }
 
-/* .hero {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 600px;
-    position: relative;
-} */
-
 .hero {
-    width: 100%;
+    width: 100dvw;
+    height: 100dvh;
     display: flex;
     justify-content: center;
 }
 
 .hero-section {
+    position: relative;
     width: 100%;
-    max-width: 1280px;
-    padding: 16px 80px;
-    display: flex;
-    margin-top: 50px;
+    height: 100%;
 }
 
-.hero-content-desktop {
-    width: 100%;
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     overflow: hidden;
-    max-width: 500px;
-    margin: 100px 0;
+    z-index: -10;
 }
 
-/* .slider {
-    margin-top: 20px;
-    position: absolute;
-    overflow: hidden;
-    max-width: 700px;
-    height: 600px;
-    right: 0;
-} */
+.slider img {
+    height: 100%;
+}
 
 figure {
     position: relative;
     width: 400%;
+    height: 100%;
     margin: 0;
     left: 0;
     animation: 20s slider infinite;
@@ -178,18 +177,7 @@ figure {
 figure img {
     float: left;
     width: 25%;
-}
-
-/* .hero-content-desktop {
-    position: relative;
-    width: 100%;
-    max-width: 1280px;
-    padding: 16px 80px;
-    display: flex;
-} */
-
-.hero-content-mobile {
-    display: none;
+    object-fit: cover;
 }
 
 .hero-cta {
@@ -198,13 +186,22 @@ figure img {
     gap: 32px;
     align-items: center;
     justify-content: center;
+    color: white;
+    background-color: rgba(134, 134, 134, 0.6);
+    border-radius: 32px;
+    padding: 24px 48px;
 }
 
 .hero-cta p {
     font-family: "Bowlby One";
     font-size: 32px;
     text-align: center;
-    color: #736d61;
+}
+
+.hero-cta h1 {
+    font-family: "Bowlby One";
+    font-size: 88px;
+    color: white;
 }
 
 .hero-cta button {
@@ -224,8 +221,8 @@ figure img {
     width: 100%;
     display: flex;
     justify-content: center;
-    background: linear-gradient(180deg, white 5%, #c7c7c7);
-    /* background-color: #e7e6e6; */
+    /* background: linear-gradient(180deg, white 5%, #c7c7c7); */
+    background-color: #f9f9f9;
     padding: 72px 0;
 }
 
@@ -282,7 +279,7 @@ figure img {
     width: 100%;
     display: flex;
     justify-content: center;
-    box-shadow: 5px 0 10px #736d61;
+    /* box-shadow: 5px 0 10px #736d61; */
     padding: 72px 0;
 }
 
@@ -478,6 +475,7 @@ h2 {
     display: flex;
     justify-content: center;
     padding: 72px 0;
+    background-color: #f9f9f9;
 }
 
 .tech {
@@ -792,20 +790,20 @@ footer {
         color: #736d61;
     }
 
-    .hero-section {
+    /* .hero-section {
         width: 100%;
         padding: 16px 16px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 12px;
-    }
+    } */
 
-    .hero-content-desktop {
+    /* .hero-content-desktop {
         display: none;
-    }
+    } */
 
-    .hero-content-mobile {
+    /* .hero-content-mobile {
         width: 100%;
         padding: 16px 16px;
         display: flex;
@@ -813,7 +811,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         height: fit-content;
-    }
+    } */
 
     .hero-cta {
         width: 100%;
@@ -824,6 +822,7 @@ footer {
         gap: 16px;
         align-items: center;
         justify-content: center;
+        padding: 12px;
     }
 
     .hero-cta p {
@@ -831,7 +830,10 @@ footer {
         width: 100%;
         font-size: 20px;
         text-align: center;
-        color: #736d61;
+    }
+
+    .hero-cta h1 {
+        font-size: 32px;
     }
 
     .about-us {
